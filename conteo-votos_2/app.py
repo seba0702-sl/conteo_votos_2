@@ -502,7 +502,7 @@ with tab2:
                 df,
                 use_container_width=True,
                 disabled=[
-                    "id",
+                    
                     "mesa",
                     "sede",
                     "localidad",
@@ -530,11 +530,11 @@ with tab2:
                             text("""
                                 UPDATE mesas
                                 SET verificado = :verificado
-                                WHERE id = :id
+                                WHERE mesa = :mesa
                             """),
                             {
                                 "verificado": bool(row["verificado"]),
-                                "id": int(row["id"]),
+                                "mesa": int(row["mesa"]),
                             },
                         )
                 st.success("Verificación actualizada")
