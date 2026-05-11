@@ -7,6 +7,7 @@ import hashlib
 import io
 from datetime import datetime
 import PyPDF2
+import pdfplumber
 import re
 from datetime import datetime
 from zoneinfo import ZoneInfo
